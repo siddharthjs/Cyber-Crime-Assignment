@@ -60,3 +60,46 @@ The total expected utility combines the utilities of all possible paths to provi
 
 Given that the expected utility for the intruder is positive (22,780 pounds), according to normative decision theory, the rational choice for the intruder would be to "attack" rather than "do not attack," assuming their cost for not attacking is zero. This conclusion is drawn because a positive expected utility indicates that the overall outcome of the action (attacking) is favorable from the intruder's perspective.
 
+## Option 1: Implementing 'Clean Desks' Policy
+
+### Impact:
+
+- Halves the probability of successfully stealing loot (from 50% to 25%).
+
+### Cost:
+
+- £12,000 per month in lost productivity.
+
+### Expected Utility Calculations:
+
+For each option, we need to recalculate the intruder's expected utility and the company's expected financial impact. The calculations will be based on the probabilities and utilities provided in the original question and the modified probabilities for each option.
+
+We'll calculate the intruder's expected utility and the company's expected monthly cost for both options. Remember, the company's monthly cost includes the cost of the security measure plus any expected losses from successful intrusions. We'll also compare these to the intruder's original expected utility to see if their rational decision (attack or not attack) changes.
+
+#### Recalculated Expected Utility:
+
+1. **Success Path:**
+   Calculation: P_enter * P_not_challenged_looking * P_steal_loot_clean_desks * P_not_challenged_exit * U_success = 0.5 * 0.9 * 0.25 * 0.99 * 120000 = 13,365 pounds
+
+2. **Failed at Stealing, Exits Without Being Noticed:**
+   Calculation: P_enter * P_not_challenged_looking * (1 - P_steal_loot_clean_desks) * U_failure = 0.5 * 0.9 * 0.75 * -1000 = -337.5 pounds
+
+3. **Caught Red-handed While Stealing:**
+   Calculation: P_enter * P_caught_stealing * U_heavy_punishment = 0.5 * 0.1 * -100000 = -5,000 pounds
+
+4. **Challenged and Convinces, then Steals:**
+   Calculation: P_enter * P_challenged * P_convinces * P_steal_loot_clean_desks * U_success = 0.5 * 0.1 * 0.5 * 0.25 * 120000 = 750 pounds
+
+5. **Challenged, Fails to Convince, Arrested Without Loot:**
+   Calculation: P_enter * P_challenged * (1 - P_convinces) * U_light_punishment = 0.5 * 0.1 * 0.5 * -10000 = -250 pounds
+
+6. **Exits With Loot, Challenged on Way Out, Convinces:**
+   Calculation: P_enter * P_steal_loot_clean_desks * P_challenged_exit * P_convinces * U_success = 0.5 * 0.25 * 0.01 * 0.5 * 120000 = 75 pounds
+
+7. **Exits With Loot, Challenged on Way Out, Fails to Convince, Arrested With Loot:**
+   Calculation: P_enter * P_steal_loot_clean_desks * P_challenged_exit * (1 - P_convinces) * U_heavy_punishment = 0.5 * 0.25 * 0.01 * 0.5 * -100000 = -62.5 pounds
+
+### Total Expected Utility for 'Clean Desks' Policy:
+
+EU_clean_desks = 13,365 - 337.5 - 5,000 + 750 - 250 + 75 - 62.5 = 8,540 pounds.
+
