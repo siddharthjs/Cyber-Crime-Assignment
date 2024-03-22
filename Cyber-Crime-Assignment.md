@@ -103,3 +103,40 @@ We'll calculate the intruder's expected utility and the company's expected month
 
 EU_clean_desks = 13,365 - 337.5 - 5,000 + 750 - 250 + 75 - 62.5 = 8,540 pounds.
 
+## Option 2: Installing Sophisticated Entrance Gate
+
+### Impact:
+
+- Reduces the probability of an intruder entering the restricted area by 75% (from 50% to 12.5%).
+
+### Cost:
+
+- £3,000 per month, including gate costs and lost productivity.
+
+### Recalculated Expected Utility:
+
+1. **Success Path:**
+   Calculation: P_enter_sophisticated_gate * P_not_challenged_looking * P_steal_loot * P_not_challenged_exit * U_success = 0.125 * 0.9 * 0.5 * 0.99 * 120000 = 6,682.5 pounds
+
+2. **Failed at Stealing, Exits Without Being Noticed:**
+   Calculation: P_enter_sophisticated_gate * P_not_challenged_looking * (1 - P_steal_loot) * U_failure = 0.125 * 0.9 * 0.5 * -1000 = -56.25 pounds
+
+3. **Caught Red-handed While Stealing:**
+   Calculation: P_enter_sophisticated_gate * P_caught_stealing * U_heavy_punishment = 0.125 * 0.1 * -100000 = -1,250 pounds
+
+4. **Challenged and Convinces, then Steals:**
+   Calculation: P_enter_sophisticated_gate * P_challenged * P_convinces * P_steal_loot * U_success = 0.125 * 0.1 * 0.5 * 0.5 * 120000 = 375 pounds
+
+5. **Challenged, Fails to Convince, Arrested Without Loot:**
+   Calculation: P_enter_sophisticated_gate * P_challenged * (1 - P_convinces) * U_light_punishment = 0.125 * 0.1 * 0.5 * -10000 = -62.5 pounds
+
+6. **Exits With Loot, Challenged on Way Out, Convinces:**
+   Calculation: P_enter_sophisticated_gate * P_steal_loot * P_challenged_exit * P_convinces * U_success = 0.125 * 0.5 * 0.01 * 0.5 * 120000 = 37.5 pounds
+
+7. **Exits With Loot, Challenged on Way Out, Fails to Convince, Arrested With Loot:**
+   Calculation: P_enter_sophisticated_gate * P_steal_loot * P_challenged_exit * (1 - P_convinces) * U_heavy_punishment = 0.125 * 0.5 * 0.01 * 0.5 * -100000 = -31.25 pounds
+
+### Total Expected Utility for Sophisticated Entrance Gate:
+
+EU_sophisticated_gate = 6,682.5 - 56.25 - 1,250 + 375 - 62.5 + 37.5 - 31.25 = 5,695 pounds.
+
