@@ -140,3 +140,17 @@ EU_clean_desks = 13,365 - 337.5 - 5,000 + 750 - 250 + 75 - 62.5 = 8,540 pounds.
 
 EU_sophisticated_gate = 6,682.5 - 56.25 - 1,250 + 375 - 62.5 + 37.5 - 31.25 = 5,695 pounds.
 
+## Comparative Analysis
+
+### Reduction in Expected Utility:
+
+Both security measures effectively reduce the expected utility for potential intruders, albeit to different extents. The sophisticated entrance gate leads to a more considerable decrease in expected utility compared to the 'Clean Desks' policy. This suggests that making entry more challenging has a more substantial deterrent effect than making the final step of the attack (stealing loot undetected) harder. The sophisticated entrance gate addresses the threat at an earlier stage by preventing entry. The 'Clean Desks' policy, though impactful, relies on intruders bypassing initial security layers.
+
+### Cost-Benefit Consideration:
+
+The sophisticated entrance gate offers a more favorable cost-benefit ratio. Its lower monthly cost (£3,000) and significant impact on reducing intrusion probability make it a cost-effective deterrent. In contrast, the 'Clean Desks' policy, despite its higher cost (£12,000 per month), provides broader cultural security benefits that are harder to quantify financially.
+
+### Long-Term Implications:
+
+The entrance gate is a one-time investment with ongoing minimal costs, potentially offering enduring deterrence with little need for further intervention. The 'Clean Desks' policy requires continuous enforcement and cultural adaptation, which may vary in effectiveness over time.
+
