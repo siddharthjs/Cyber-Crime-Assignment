@@ -187,3 +187,73 @@ The exploration of decision-making under uncertainty, especially in the context 
 - **Psychological Aspects of Cybersecurity:** Addressing psychological factors that affect risk perception and decision-making can significantly enhance the efficacy of security measures. This includes combating complacency and fostering vigilance.
 - **Customized Security Strategies:** Acknowledging the diversity of cyber threats and organizational susceptibilities, security strategies should be tailored to specific risks, combining technical defenses with human-centric solutions.
 
+## Analysis of Risks of Use Error in System Administration Tasks: Setting File System Permissions on macOS
+
+### Author:
+
+Nouf A Almosaied
+
+### Date:
+
+31st March 2024
+
+### Product Category:
+
+System Administration (Setting File System Permissions)
+
+### Specific Instance:
+
+macOS Catalina, Version 10.15.7
+
+### Literature Review and Known Human Factor Problems:
+
+Setting file system permissions on macOS Catalina involves intricate processes crucial for maintaining data security. Despite its robust Unix-based permissions system, the interface macOS provides for this task may lead to user errors, thereby compromising system security.
+
+#### Over Reliance on GUI:
+
+Many users prefer the macOS graphical user interface for its simplicity but may overlook the depth of control and precision offered by the command line, potentially leading to less secure configurations (Niezen et al., 2010).
+
+#### Misinterpretation of Permission Levels:
+
+Users often misunderstand the scope of 'Read & Write' permissions, granting broader access than necessary, which can expose sensitive data to unauthorized modifications.
+
+#### Confusion Between User and Group Permissions:
+
+Distinguishing between user and group permissions can be challenging, with users sometimes granting permissions to a wider audience than intended, thus increasing the risk of data breaches (Whitten & Tygar, 1999).
+
+### Personal Use Observations:
+
+Experimentation with setting file system permissions on macOS Catalina revealed several potential pitfalls:
+
+1. **Accessing Folder Info:** The interface's subtlety in indicating that permissions are locked can lead users to believe their settings are already secure.
+
+2. **Editing Permissions:** The layout of the permissions editing interface may lead to errors, such as incorrectly assigning 'Read & Write' permissions due to a misunderstanding of the GUI.
+
+3. **Applying Permissions to Enclosed Items:** Failing to apply changes to enclosed items might leave parts of the system vulnerable despite a secure top-level configuration.
+
+### Design and Usability Evaluation:
+
+The usability of macOS's permission setting interface, when assessed against established principles, highlights areas needing improvement:
+
+1. **Visibility of System Status:** The interface does not adequately convey the inheritance of permissions or the need to unlock settings before changes can be made.
+
+2. **Match Between System and the Real World:** Terminology and conceptual models used in the interface might not align well with the user's understanding, leading to misconceptions and errors.
+
+### Corrective Measures and Recommendations:
+
+#### For Users and System Administrators:
+
+1. **Command Line Training:** Enhancing familiarity with the command line can help leverage macOS's full capabilities for precise permission settings.
+
+2. **Routine Security Audits:** Regular reviews of permission settings can prevent drift from intended security postures.
+
+#### For Apple:
+
+1. **Interface Redesign:** Improvements could include clearer visual cues for locked permissions and better feedback on the impact of changes.
+
+2. **Enhanced Documentation:** Providing comprehensive, easily accessible guidance on setting permissions could reduce errors.
+
+### Conclusion:
+
+System administration tasks, such as setting file system permissions in macOS Catalina, entail complex decision-making that can be prone to user error. This analysis underscores the importance of both system design in mitigating these risks and the role of user education in ensuring data security.
+
