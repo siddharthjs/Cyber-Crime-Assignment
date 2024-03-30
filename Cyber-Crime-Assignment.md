@@ -257,3 +257,11 @@ The usability of macOS's permission setting interface, when assessed against est
 
 System administration tasks, such as setting file system permissions in macOS Catalina, entail complex decision-making that can be prone to user error. This analysis underscores the importance of both system design in mitigating these risks and the role of user education in ensuring data security.
 
+## Appendix
+
+### References:
+
+1. Niezen, G., van der Vlist, B.J.J., Hu, J., & Feijs, L.M.G. (2010). "User-defined gestures for connecting mobile phones, public displays and tabletops." Proceedings of the 12th International Conference on Human Computer Interaction with Mobile Devices and Services, 241-250. ACM. Available at: https://dl.acm.org/doi/10.1145/1851600.1851640.
+
+2. Whitten, A., & Tygar, J. D. (1999). "Why Johnny Can't Encrypt: A Usability Evaluation of PGP 5.0." USENIX Security Symposium, 169-184. Available at: https://www.usenix.org/conference/8th-usenix-security-symposium/why-johnny-cant-encrypt-usability-evaluation-pgp-50.
+
